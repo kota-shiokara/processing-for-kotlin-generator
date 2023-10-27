@@ -10,10 +10,10 @@ import com.intellij.openapi.roots.ModifiableRootModel
 import com.intellij.openapi.roots.ui.configuration.ModulesProvider
 import javax.swing.Icon
 
-class IntellijPluginModuleBuilder: JavaModuleBuilder() {
-    override fun getPresentableName(): String = IntellijPluginModuleType.NAME
-    override fun getNodeIcon(): Icon = IntellijPluginModuleType.PLUGINS_ICON
-    override fun getGroupName(): String = IntellijPluginModuleType.NAME
+class P4KGeneratorModuleBuilder: JavaModuleBuilder() {
+    override fun getPresentableName(): String = P4KGeneratorModuleType.NAME
+    override fun getNodeIcon(): Icon = P4KGeneratorModuleType.PLUGINS_ICON
+    override fun getGroupName(): String = P4KGeneratorModuleType.NAME
     override fun getWeight(): Int = BUILD_SYSTEM_WEIGHT - 1
     override fun getBuilderId() = "P4K_MODULE"
     override fun isSuitableSdkType(sdkType: SdkTypeId?) = sdkType === JavaSdk.getInstance()
@@ -24,12 +24,12 @@ class IntellijPluginModuleBuilder: JavaModuleBuilder() {
     }
 
 
-    override fun getParentGroup(): String = IntellijPluginModuleType.NAME
+    override fun getParentGroup(): String = P4KGeneratorModuleType.NAME
 
     override fun createWizardSteps(
         wizardContext: WizardContext,
         modulesProvider: ModulesProvider
-    ): Array<ModuleWizardStep> = arrayOf(IntellijPluginArtifactWizardStep())
+    ): Array<ModuleWizardStep> = arrayOf(P4KGeneratorArtifactWizardStep())
 
-    override fun getCustomOptionsStep(context: WizardContext?, parentDisposable: Disposable?) = IntellijPluginArtifactWizardStep()
+    override fun getCustomOptionsStep(context: WizardContext?, parentDisposable: Disposable?) = P4KGeneratorArtifactWizardStep()
 }

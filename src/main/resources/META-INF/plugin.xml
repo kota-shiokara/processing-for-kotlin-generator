@@ -10,6 +10,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <moduleBuilder builderClass="jp.ikanoshiokara.p4k.generator.IntellijPluginModuleBuilder"/>
+        <moduleBuilder builderClass="jp.ikanoshiokara.p4k.generator.P4KGeneratorModuleBuilder"/>
     </extensions>
 </idea-plugin>
