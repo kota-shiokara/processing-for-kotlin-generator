@@ -1,4 +1,4 @@
-package com.github.kotashiokara.processingforkotlingenerator
+package jp.ikanoshiokara.p4k.generator
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

@@ -1,4 +1,4 @@
-package com.github.kotashiokara.processingforkotlingenerator
+package jp.ikanoshiokara.p4k.generator
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.openapi.components.service

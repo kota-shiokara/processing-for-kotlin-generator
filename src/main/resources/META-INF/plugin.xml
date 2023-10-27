@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.kotashiokara.processingforkotlingenerator</id>
+    <id>jp.ikanoshiokara.p4k.generator</id>
     <name>Processing for Kotlin Generator</name>
-    <vendor>kota-shiokara</vendor>
+    <vendor url="https://github.com/kota-shiokara">kota-shiokara</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.java</depends>
@@ -10,6 +10,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <moduleBuilder builderClass="com.github.kotashiokara.processingforkotlingenerator.IntellijPluginModuleBuilder"/>
+        <moduleBuilder builderClass="jp.ikanoshiokara.p4k.generator.IntellijPluginModuleBuilder"/>
     </extensions>
 </idea-plugin>

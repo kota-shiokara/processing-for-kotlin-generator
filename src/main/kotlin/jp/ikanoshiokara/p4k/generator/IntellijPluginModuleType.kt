@@ -1,4 +1,4 @@
-package com.github.kotashiokara.processingforkotlingenerator
+package jp.ikanoshiokara.p4k.generator
 
 import com.intellij.openapi.module.ModuleType
 import com.intellij.openapi.util.IconLoader

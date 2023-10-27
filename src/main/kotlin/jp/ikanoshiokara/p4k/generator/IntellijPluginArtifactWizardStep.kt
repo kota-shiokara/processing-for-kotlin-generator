@@ -1,4 +1,4 @@
-package com.github.kotashiokara.processingforkotlingenerator
+package jp.ikanoshiokara.p4k.generator
 
 import com.intellij.ide.util.projectWizard.ModuleWizardStep
 import javax.swing.JComponent
