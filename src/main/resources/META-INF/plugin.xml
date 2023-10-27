@@ -10,11 +10,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-<!--        <toolWindow factoryClass="com.github.kotashiokara.processingforkotlingenerator.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>-->
-        <moduleBuilder builderClass="com.github.kotashiokara.processingforkotlingenerator.module.IntellijPluginModuleBuilder" id="intellijPluginWizard" order="first" />
+        <moduleBuilder builderClass="com.github.kotashiokara.processingforkotlingenerator.IntellijPluginModuleBuilder"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.kotashiokara.processingforkotlingenerator.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
