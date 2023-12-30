@@ -8,7 +8,7 @@ class P4KGeneratorModuleType: ModuleType<P4KGeneratorModuleBuilder>("P4K_WIZARD"
     companion object {
         const val NAME = "Processing for Kotlin"
         const val DESCRIPTION = "Generate file from template of Processing for Kotlin"
-        val PLUGINS_ICON by lazy { IconLoader.getIcon("/icons/example_icon16.png", ClassLoader.getPlatformClassLoader()) }
+        val PLUGINS_ICON by lazy { IconLoader.getIcon("/icons/example_icon16.png", P4KGeneratorModuleType::class.java) }
     }
 
     override fun createModuleBuilder(): P4KGeneratorModuleBuilder = P4KGeneratorModuleBuilder()
