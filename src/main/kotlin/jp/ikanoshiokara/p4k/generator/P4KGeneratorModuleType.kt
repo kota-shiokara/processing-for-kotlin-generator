@@ -4,12 +4,11 @@ import com.intellij.openapi.module.ModuleType
 import com.intellij.openapi.util.IconLoader
 import javax.swing.Icon
 
-class P4KGeneratorModuleType: ModuleType<P4KGeneratorModuleBuilder>("p4kg") {
+class P4KGeneratorModuleType: ModuleType<P4KGeneratorModuleBuilder>("P4K_WIZARD") {
     companion object {
-        const val NAME = "Processing for Kotlin Generator"
+        const val NAME = "Processing for Kotlin"
         const val DESCRIPTION = "Generate file from template of Processing for Kotlin"
         val PLUGINS_ICON by lazy { IconLoader.getIcon("/icons/example_icon16.png", ClassLoader.getPlatformClassLoader()) }
-        val INSTANCE = P4KGeneratorModuleType()
     }
 
     override fun createModuleBuilder(): P4KGeneratorModuleBuilder = P4KGeneratorModuleBuilder()
